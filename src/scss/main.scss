@@ -1,0 +1,69 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+
+$primary_color: #f00;
+@mixin bordered($color,$width) {
+  border: $width solid $color
+    
+  }
+  
+  
+body{ font-size: 1rem; line-height: 1rem; color: $primary_color}
+.header{background: $purple;}
+.container{background: #fff;}
+.main-content{padding:0.5rem 1rem}
+.big-font{font-size: 1.5rem;color: #333;}
+.circle-logo{background: rgb(0, 101, 160); border-radius: 50%; width: 3.5rem}
+.main-banner{
+  @include bordered(blue,5px);
+  /*background: url(../images/hero-banner.jpg)  center bottom;*/ height: 600px; position: relative;
+ h2{background: rgba(0,0,0,.3)}
+}
+
+
+
+.banner-style{height: 600px; }
+.banner-1{background: url(../images/hero-banner.jpg)  center bottom}
+.banner-2{background: url(../images/hero-banner.jpg)  center bottom}
+.banner-3{background: url(../images/hero-banner.jpg)  center bottom}
+
+
+.wave1, .wave2{height: 30px;width: 100%;z-index: 12;left: 0;bottom: -30px;margin-top: -28px}
+
+.wave1 {
+  -webkit-animation: wave-animation1 8.7s infinite linear; /* Safari 4+ */
+  -moz-animation:    wave-animation1 8.7s infinite linear; /* Fx 5+ */
+  -o-animation:      wave-animation1 8.7s infinite linear; /* Opera 12+ */
+  animation:         wave-animation1 8.7s infinite linear; /* IE 10+ */
+}
+.wave2 {
+  -webkit-animation: wave-animation1 6.3s infinite linear; /* Safari 4+ */
+  -moz-animation:    wave-animation1 6.3s infinite linear; /* Fx 5+ */
+  -o-animation:      wave-animation1 6.3s infinite linear; /* Opera 12+ */
+  animation:         wave-animation1 6.3s infinite linear; /* IE 10+ */
+}
+
+@-webkit-keyframes wave-animation1 {
+  0%   { background-position: 0 0; }
+  100% { background-position: 1601px 0; }
+}
+@-moz-keyframes wave-animation1 {
+  0%   { background-position: 0 0; }
+  100% { background-position: 1601px 0; }
+}
+@-o-keyframes wave-animation1 {
+  0%   { background-position: 0 0; }
+  100% { background-position: 1601px 0; }
+}
+@keyframes wave-animation1 {
+  0%   { background-position: 0 0; }
+  100% {background-position: 1601px 0;}
+}
+
+.wave1 {
+    background: url('http://www.templates-preview.com/bootstrap-templates/300111854/images/wave1.png') 0 0 repeat-x;
+}
+.wave2 {
+    background: url('http://www.templates-preview.com/bootstrap-templates/300111854/images/wave2.png') 0 0 repeat-x;
+}
+
+.footer{background: $purple; height: 40rem; color: $white}
